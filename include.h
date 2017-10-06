@@ -40,5 +40,8 @@
 #include "inc/hw_memmap.h"
 #include "inc/hw_types.h"
 
+//thu vien chinh chu
+#include "quet_led/quet_led.h"
+#include "snake/snake.h"
 
 #endif /* INCLUDE_H_ */

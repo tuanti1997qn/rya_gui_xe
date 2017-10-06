@@ -12,9 +12,28 @@ char led_cube[8][8][8];// x: row, y: column, z: layer
 //-----------------------------------------------------------------------------------------------------------------------
 //* extern function
 
+void quet()
+{
+    static char tang = 0;
+    layer_shift(tang);
+    tang ++ ;
+    if(tang == 8)
+    {
+        tang = 0;
+    }
+}
+
+void set_led_cube(char x, char y, char z, char data)
+{
+    led_cube[x][y][z] = data;
+}
+
+char get_led_cube(char x, char y, char z)
+{
+    return led_cube[x][y][z];
+}
 
 //-----------------------------------------------------------------------------------------------------------------------
-
 
 //-----------------------------------------------------------------------------------------------------------------------
 //* static function
@@ -34,21 +53,21 @@ void bit_shift(char bit)        //dich 1 bit vao 74HC595
 
 void column_shift(char layer, char row)     // xem lai ve con dich  // dich 1 hang
 {
-    int i=0;
-    for(i=0 ; i<8 ; i++)
+    int column=0;
+    for(column=0 ; column<8 ; column++)
     {
-        bit_shift(led_cube[i][row][layer]);
+        bit_shift(led_cube[column][row][layer]);
     }
 }
 
-void layer_shift(char layer)
+void layer_shift(char layer)            // dich 1 cot
 {
-    int i=0;
+    int row=0;
     choose_layer(layer);
     write_pin(PORT_control,LATCH_PIN,LATCH_PIN);        //xem lai
-    for(i=0 ; i<8 ; i++)
+    for(row=0 ; row<8 ; row++)
     {
-        column_shift(layer, i);
+        column_shift(layer, row);
     }
     write_pin(PORT_control,LATCH_PIN,0);
 }
@@ -62,6 +81,9 @@ void choose_layer(char layer)
 
 //-----------------------------------------------------------------------------------------------------------------------
 //hardware function
-void write_pin(unsigned int port, unsigned int pin, unsigned int data);
+void write_pin(unsigned int port, unsigned int pin, unsigned int data)
+{
+
+}
 //-----------------------------------------------------------------------------------------------------------------------
 

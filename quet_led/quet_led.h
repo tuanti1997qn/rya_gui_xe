@@ -18,4 +18,10 @@
 #define Layer_port_control  GPIO_PORTA_BASE
 #define Layer_pin           0xFF
 
+
+// function
+extern void quet();
+extern void set_led_cube(char x, char y, char z, char data);
+extern char get_led_cube(char x, char y, char z);
+
 #endif /* QUET_LED_QUET_LED_H_ */

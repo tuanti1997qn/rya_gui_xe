@@ -13,6 +13,7 @@ ORDERED_OBJS += \
 "./main.obj" \
 "./tm4c123gh6pm_startup_ccs.obj" \
 "./quet_led/quet_led.obj" \
+"./snake/snake.obj" \
 "C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" \
 "../tm4c123gh6pm.cmd" \
 $(GEN_CMDS__FLAG) \
@@ -27,8 +28,10 @@ RMDIR := RMDIR /S/Q
 -include sources.mk
 -include subdir_vars.mk
 -include quet_led/subdir_vars.mk
+-include snake/subdir_vars.mk
 -include subdir_rules.mk
 -include quet_led/subdir_rules.mk
+-include snake/subdir_rules.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -158,8 +161,8 @@ rya_gui_xe.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "main.obj" "tm4c123gh6pm_startup_ccs.obj" "quet_led\quet_led.obj" 
-	-$(RM) "main.d" "tm4c123gh6pm_startup_ccs.d" "quet_led\quet_led.d" 
+	-$(RM) "main.obj" "tm4c123gh6pm_startup_ccs.obj" "quet_led\quet_led.obj" "snake\snake.obj" 
+	-$(RM) "main.d" "tm4c123gh6pm_startup_ccs.d" "quet_led\quet_led.d" "snake\snake.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 
