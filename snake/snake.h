@@ -9,13 +9,13 @@
 #define SNAKE_SNAKE_H_
 
 #include "../include.h"
+#include "private_snake.h"
 
 #define fail 0
 #define xem_fail 1
 
-#define wall_die   0
-#define body_die   1
-#define still_live 2
+#define die   0
+#define alive   1
 
 #define win        2
 
@@ -33,6 +33,7 @@
 
 extern int8_t set_direct(int16_t dir);
 extern void init_snake();
+extern char creat_food(int16_t random_value);
 
 //-----------------------------------------------------------------------------------------------------------------------
 

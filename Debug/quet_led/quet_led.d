@@ -33,6 +33,8 @@ quet_led/quet_led.obj: C:/ti/TivaWare_C_Series-2.1.2.111/inc/hw_memmap.h
 quet_led/quet_led.obj: C:/ti/TivaWare_C_Series-2.1.2.111/inc/hw_types.h
 quet_led/quet_led.obj: ../quet_led/../snake/snake.h
 quet_led/quet_led.obj: ../quet_led/../snake/../include.h
+quet_led/quet_led.obj: ../quet_led/../snake/private_snake.h
+quet_led/quet_led.obj: ../quet_led/../snake/snake.h
 
 ../quet_led/quet_led.c: 
 ../quet_led/quet_led.h: 
@@ -67,3 +69,5 @@ C:/ti/TivaWare_C_Series-2.1.2.111/inc/hw_memmap.h:
 C:/ti/TivaWare_C_Series-2.1.2.111/inc/hw_types.h: 
 ../quet_led/../snake/snake.h: 
 ../quet_led/../snake/../include.h: 
+../quet_led/../snake/private_snake.h: 
+../quet_led/../snake/snake.h: 

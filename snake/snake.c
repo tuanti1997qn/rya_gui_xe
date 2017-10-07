@@ -39,6 +39,23 @@ void init_snake()
     set_led_cube(7, 7, 7);// set đồ ăn
 }
 
+char creat_food(int16_t random_value)
+{
+    int8_t food_place[3];
+    int16_t food_place_10;
+    convert_8(random_value,food_place);     // lấy giá trị random từ 1-8 cho đồ ăn
+    food_place_10 = food_place[0]*100 + food_place[1]*10 +food_place[2];   // chuyển thành 10
+    convert_10(food_place_10, food_place);
+    if( get_led_cube(food_place[0],food_place[1],food_place[2]) == 1)  // kiểm tra có trùng hay không
+    {
+        return fail;
+    }
+    food = food_place_10;          // không trùng thì gán và set...
+    set_led_cube(food_place[0],food_place[1],food_place[2]);
+    return xem_fail;
+
+}
+
 //-----------------------------------------------------------------------------------------------------------------------
 
 
@@ -50,7 +67,7 @@ void init_snake()
 void snake_move()               // ran di chuyen
 {
     int length_body_snake = 0;
-    char descartes[3];
+    int8_t descartes[3];
     convert_10(snake_body[length_body_snake] , descartes);      // duyet tu duoi den dau ran
     clear_led_cube(descartes[0] , descartes[1] , descartes[2]);     // xoa cai duoi duoi trong mang led cube
     for(length_body_snake = 0 ; length_body_snake < snake_length ; length_body_snake++ )        // dich chuyen len 1 don vi theo huong
@@ -80,17 +97,17 @@ char check_snake_die()                                          // check xem ran
     {
         if( check_status[i] >= over_max_wall )    // check dung tuong (chan tren)
         {
-            return wall_die;
+            return die;
         }
     }
     for(i = 0 ; i < snake_length ; i++)             // check rắn cắn thân
     {
         if( snake_body[snake_length] == snake_body[i] )     // duyet het than ran
         {
-            return body_die;
+            return die;
         }
     }
-    return still_live;
+    return alive;
 }
 
 char check_snake_eat()      // check truoc khi move
@@ -110,6 +127,7 @@ void convert_8(int16_t num,int8_t *goal)            // hàm convert qua hệ bá
     num /= 7;
     *(goal + 2) = num % 7;
 }
+
 
 
 //-----------------------------------------------------------------------------------------------------------------------

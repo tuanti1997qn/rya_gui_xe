@@ -8,6 +8,8 @@
 #ifndef SNAKE_PRIVATE_SNAKE_H_
 #define SNAKE_PRIVATE_SNAKE_H_
 
+#include "snake.h"
+
 //-----------------------------------------------------------------------------------------------------------------------
 //* static function
 
