@@ -23,9 +23,14 @@ void quet()
     }
 }
 
-void set_led_cube(char x, char y, char z, char data)
+void set_led_cube(char x, char y, char z)
 {
-    led_cube[x][y][z] = data;
+    led_cube[x][y][z] = 1;
+}
+
+void clear_led_cube(char x, char y, char z)
+{
+    led_cube[x][y][z] = 0;
 }
 
 char get_led_cube(char x, char y, char z)

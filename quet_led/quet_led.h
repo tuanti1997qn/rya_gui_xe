@@ -21,7 +21,8 @@
 
 // function
 extern void quet();
-extern void set_led_cube(char x, char y, char z, char data);
+extern void set_led_cube(char x, char y, char z);
 extern char get_led_cube(char x, char y, char z);
+extern void clear_led_cube(char x, char y, char z);
 
 #endif /* QUET_LED_QUET_LED_H_ */
