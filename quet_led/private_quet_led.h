@@ -24,5 +24,6 @@ void choose_layer(char layer);
 ///-----------------------------------------------------------------------------------------------------------------------
 //hardware function
 void write_pin(unsigned int port, unsigned int pin, unsigned int data);
+void delay();
 //-----------------------------------------------------------------------------------------------------------------------
 #endif /* QUET_LED_PRIVATE_QUET_LED_H_ */

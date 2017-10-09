@@ -45,6 +45,7 @@ char get_led_cube(char x, char y, char z)
 void bit_shift(char bit)        //dich 1 bit vao 74HC595
 {
     write_pin(PORT_control,CLK_PIN,CLK_PIN);        //xem lai
+    delay();
     if(bit)
     {
         write_pin(PORT_control,DATA_PIN,DATA_PIN);
@@ -54,9 +55,10 @@ void bit_shift(char bit)        //dich 1 bit vao 74HC595
         write_pin(PORT_control,DATA_PIN,0);
     }
     write_pin(PORT_control,CLK_PIN,0);
+    delay();
 }
 
-void column_shift(char layer, char row)     // xem lai ve con dich  // dich 1 hang
+void column_shift(char layer, char row)     // xem lai ve con dich  // dich 1 cot
 {
     int column=0;
     for(column=0 ; column<8 ; column++)
@@ -69,11 +71,12 @@ void layer_shift(char layer)            // dich 1 cot
 {
     int row=0;
     choose_layer(layer);
-    write_pin(PORT_control,LATCH_PIN,LATCH_PIN);        //xem lai
     for(row=0 ; row<8 ; row++)
     {
         column_shift(layer, row);
     }
+    write_pin(PORT_control,LATCH_PIN,LATCH_PIN);        //xem lai // latchs
+    delay();
     write_pin(PORT_control,LATCH_PIN,0);
 }
 
@@ -89,6 +92,10 @@ void choose_layer(char layer)
 void write_pin(unsigned int port, unsigned int pin, unsigned int data)
 {
 
+}
+void delay()
+{
+    SysCtlDelay(50);
 }
 //-----------------------------------------------------------------------------------------------------------------------
 
