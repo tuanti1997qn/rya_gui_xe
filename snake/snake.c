@@ -159,8 +159,8 @@ int16_t get_random_value()          // lấy giá trị "ngẫu nhiên" từ tim
 
 void snake_win()
 {
-                                // làm cái abc sỹ gì đấy
-
+                                // làm cái abc xyz gì đấy
+                                // nghiên cứu thử reset bằng phần mềm. không thì cho treo luôn.
 }
 //-----------------------------------------------------------------------------------------------------------------------
 
