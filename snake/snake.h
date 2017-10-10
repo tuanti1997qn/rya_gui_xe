@@ -34,7 +34,7 @@
 extern int8_t set_direct(int16_t dir);
 extern void init_snake();
 extern char creat_food(int16_t random_value);
-
+extern void set_food_random_value(int16_t random_value);
 //-----------------------------------------------------------------------------------------------------------------------
 
 #endif /* SNAKE_SNAKE_H_ */

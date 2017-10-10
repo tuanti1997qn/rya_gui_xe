@@ -67,6 +67,16 @@ void column_shift(char layer, char row)     // xem lai ve con dich  // dich 1 co
     }
 }
 
+
+//void column_shift(char layer, char row)     // xem lai ve con dich  // dich 1 cot
+//{
+//    int column=0;
+//    for(column=0 ; column<8 ; column++)
+//    {
+//        bit_shift(1);
+//    }
+//}
+
 void layer_shift(char layer)            // dich 1 cot
 {
     int row=0;
@@ -85,13 +95,18 @@ void choose_layer(char layer)
     char pin[8]= {GPIO_PIN_0,GPIO_PIN_1,GPIO_PIN_2,GPIO_PIN_3,GPIO_PIN_4,GPIO_PIN_5,GPIO_PIN_6,GPIO_PIN_7};
     write_pin(Layer_port_control , Layer_pin , pin[layer]);
 }
+
+//void choose_layer(char layer)
+//{
+//    write_pin(Layer_port_control, GPIO_PIN_4, GPIO_PIN_4);
+//}
 //-----------------------------------------------------------------------------------------------------------------------
 
 //-----------------------------------------------------------------------------------------------------------------------
 //hardware function
 void write_pin(unsigned int port, unsigned int pin, unsigned int data)
 {
-
+    GPIOPinWrite(port, pin, data);
 }
 void delay()
 {

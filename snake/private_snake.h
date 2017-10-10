@@ -22,6 +22,12 @@ char check_snake_die();
 char check_snake_eat();
 
 void convert_8(int16_t num,int8_t *goal);
+
+void snake_eat();
+
+int16_t get_random_value();         // chưa hoàn thành
+
+void snake_win();                   // chưa hoàn thành
 //-----------------------------------------------------------------------------------------------------------------------
 
 

@@ -43,5 +43,6 @@
 //thu vien chinh chu
 #include "quet_led/quet_led.h"
 #include "snake/snake.h"
+#include "GPIO/GPIO.h"
 
 #endif /* INCLUDE_H_ */

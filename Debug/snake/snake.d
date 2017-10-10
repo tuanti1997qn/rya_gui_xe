@@ -34,6 +34,7 @@ snake/snake.obj: ../snake/../quet_led/private_quet_led.h
 snake/snake.obj: ../snake/../quet_led/quet_led.h
 snake/snake.obj: ../snake/../quet_led/../include.h
 snake/snake.obj: ../snake/../snake/snake.h
+snake/snake.obj: ../snake/../GPIO/GPIO.h
 snake/snake.obj: ../snake/private_snake.h
 
 ../snake/snake.c: 
@@ -70,4 +71,5 @@ C:/ti/TivaWare_C_Series-2.1.2.111/inc/hw_types.h:
 ../snake/../quet_led/quet_led.h: 
 ../snake/../quet_led/../include.h: 
 ../snake/../snake/snake.h: 
+../snake/../GPIO/GPIO.h: 
 ../snake/private_snake.h: 

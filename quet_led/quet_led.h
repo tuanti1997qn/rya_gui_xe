@@ -11,10 +11,10 @@
 #include "private_quet_led.h"
 #include "../include.h"
 
-#define DATA_PIN            GPIO_PORTF_BASE
-#define CLK_PIN             GPIO_PIN_1
-#define LATCH_PIN           GPIO_PIN_2
-#define PORT_control        GPIO_PIN_3
+#define DATA_PIN            GPIO_PIN_1
+#define CLK_PIN             GPIO_PIN_2
+#define LATCH_PIN           GPIO_PIN_3
+#define PORT_control        GPIO_PORTF_BASE
 #define Layer_port_control  GPIO_PORTA_BASE
 #define Layer_pin           0xFF
 
