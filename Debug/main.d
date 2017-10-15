@@ -24,6 +24,7 @@ main.obj: C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/qei.h
 main.obj: C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/fpu.h
 main.obj: C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/uart.h
 main.obj: C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/rom.h
+main.obj: C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/systick.h
 main.obj: C:/ti/TivaWare_C_Series-2.1.2.111/inc/hw_ints.h
 main.obj: C:/ti/TivaWare_C_Series-2.1.2.111/inc/hw_gpio.h
 main.obj: C:/ti/TivaWare_C_Series-2.1.2.111/inc/hw_memmap.h
@@ -36,6 +37,7 @@ main.obj: ../snake/snake.h
 main.obj: ../snake/private_snake.h
 main.obj: ../snake/snake.h
 main.obj: ../GPIO/GPIO.h
+main.obj: ../SYSTICK/SYSTICK.h
 
 ../main.c: 
 ../include.h: 
@@ -61,6 +63,7 @@ C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/qei.h:
 C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/fpu.h: 
 C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/uart.h: 
 C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/rom.h: 
+C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/systick.h: 
 C:/ti/TivaWare_C_Series-2.1.2.111/inc/hw_ints.h: 
 C:/ti/TivaWare_C_Series-2.1.2.111/inc/hw_gpio.h: 
 C:/ti/TivaWare_C_Series-2.1.2.111/inc/hw_memmap.h: 
@@ -73,3 +76,4 @@ C:/ti/TivaWare_C_Series-2.1.2.111/inc/hw_types.h:
 ../snake/private_snake.h: 
 ../snake/snake.h: 
 ../GPIO/GPIO.h: 
+../SYSTICK/SYSTICK.h: 

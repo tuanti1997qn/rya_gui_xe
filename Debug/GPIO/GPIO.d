@@ -24,6 +24,7 @@ GPIO/GPIO.obj: C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/qei.h
 GPIO/GPIO.obj: C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/fpu.h
 GPIO/GPIO.obj: C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/uart.h
 GPIO/GPIO.obj: C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/rom.h
+GPIO/GPIO.obj: C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/systick.h
 GPIO/GPIO.obj: C:/ti/TivaWare_C_Series-2.1.2.111/inc/hw_ints.h
 GPIO/GPIO.obj: C:/ti/TivaWare_C_Series-2.1.2.111/inc/hw_gpio.h
 GPIO/GPIO.obj: C:/ti/TivaWare_C_Series-2.1.2.111/inc/hw_memmap.h
@@ -36,6 +37,7 @@ GPIO/GPIO.obj: ../GPIO/../snake/snake.h
 GPIO/GPIO.obj: ../GPIO/../snake/private_snake.h
 GPIO/GPIO.obj: ../GPIO/../snake/snake.h
 GPIO/GPIO.obj: ../GPIO/../GPIO/GPIO.h
+GPIO/GPIO.obj: ../GPIO/../SYSTICK/SYSTICK.h
 
 ../GPIO/GPIO.c: 
 ../GPIO/../include.h: 
@@ -61,6 +63,7 @@ C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/qei.h:
 C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/fpu.h: 
 C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/uart.h: 
 C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/rom.h: 
+C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/systick.h: 
 C:/ti/TivaWare_C_Series-2.1.2.111/inc/hw_ints.h: 
 C:/ti/TivaWare_C_Series-2.1.2.111/inc/hw_gpio.h: 
 C:/ti/TivaWare_C_Series-2.1.2.111/inc/hw_memmap.h: 
@@ -73,3 +76,4 @@ C:/ti/TivaWare_C_Series-2.1.2.111/inc/hw_types.h:
 ../GPIO/../snake/private_snake.h: 
 ../GPIO/../snake/snake.h: 
 ../GPIO/../GPIO/GPIO.h: 
+../GPIO/../SYSTICK/SYSTICK.h: 

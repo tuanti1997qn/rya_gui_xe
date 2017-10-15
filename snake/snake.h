@@ -27,6 +27,10 @@
 
 #define snack_max_length 100
 
+#define timer_random_base TIMER0_BASE
+#define _timer TIMER_A
+#define timer_snake_base  TIMER1_BASE
+
 
 //-----------------------------------------------------------------------------------------------------------------------
 //* extern function

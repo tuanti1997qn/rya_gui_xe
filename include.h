@@ -33,6 +33,7 @@
 #include "driverlib/fpu.h"
 #include "driverlib/uart.h"
 #include "driverlib/rom.h"
+#include "driverlib/systick.h"
 
 //thu vien ho tro phan cung
 #include "inc/hw_ints.h"
@@ -44,5 +45,6 @@
 #include "quet_led/quet_led.h"
 #include "snake/snake.h"
 #include "GPIO/GPIO.h"
+#include "SYSTICK/SYSTICK.h"
 
 #endif /* INCLUDE_H_ */

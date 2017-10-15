@@ -39,7 +39,7 @@ void init_snake()
     set_led_cube(7, 7, 7);// set đồ ăn
 }
 
-char creat_food(int16_t random_value)       // hàm này lấy giá trị của giá trị random. lấy giá trị timer từ lần nhấn nút gần nhất. trong trường hợp fail lấy giá trị timer sau fail
+char creat_food(int32_t random_value)       // hàm này lấy giá trị của giá trị random. lấy giá trị timer từ lần nhấn nút gần nhất. trong trường hợp fail lấy giá trị timer sau fail
 // hàm được gọi khi vừa ăn
 {
     int8_t food_place[3];
@@ -124,7 +124,7 @@ char check_snake_eat()      // check truoc khi move
     return no_eat;
 }
 
-void convert_8(int16_t num,int8_t *goal)            // hàm convert qua hệ bát phân lấy random đồ ăn cho rắn
+void convert_8(int32_t num,int8_t *goal)            // hàm convert qua hệ bát phân lấy random đồ ăn cho rắn
 {
     *(goal + 2) = num % 7;
     num /= 7;
@@ -136,7 +136,7 @@ void convert_8(int16_t num,int8_t *goal)            // hàm convert qua hệ bá
 void snake_eat()        // rắn đã ăn mồi
 {
     snake_length++;     // tăng biến độ dài rắn
-    if(snake_length = snack_max_length)         // check độ dài rắn bằng độ dài mã thì win
+    if(snake_length == snack_max_length)         // check độ dài rắn bằng độ dài mã thì win
     {
         snake_win();
     }
@@ -150,10 +150,10 @@ void snake_eat()        // rắn đã ăn mồi
     }
 }
 
-int16_t get_random_value()          // lấy giá trị "ngẫu nhiên" từ timer ra
+int32_t get_random_value()          // lấy giá trị "ngẫu nhiên" từ timer ra
 {
-    int16_t random_value;
-                                    // ở đây là hàm lấy giá trị của timer lúc đếm khuyến cáo lấy timer nào mà không liên quan đến con rắn để tránh mất tính random.
+    int32_t random_value;
+    random_value = TimerValueGet(timer_random_base;_timer)                                // ở đây là hàm lấy giá trị của timer lúc đếm khuyến cáo lấy timer nào mà không liên quan đến con rắn để tránh mất tính random.
     return random_value;            // trả về giá trị random
 }
 

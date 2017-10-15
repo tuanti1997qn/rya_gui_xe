@@ -27,6 +27,7 @@ quet_led/quet_led.obj: C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/qei.h
 quet_led/quet_led.obj: C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/fpu.h
 quet_led/quet_led.obj: C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/uart.h
 quet_led/quet_led.obj: C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/rom.h
+quet_led/quet_led.obj: C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/systick.h
 quet_led/quet_led.obj: C:/ti/TivaWare_C_Series-2.1.2.111/inc/hw_ints.h
 quet_led/quet_led.obj: C:/ti/TivaWare_C_Series-2.1.2.111/inc/hw_gpio.h
 quet_led/quet_led.obj: C:/ti/TivaWare_C_Series-2.1.2.111/inc/hw_memmap.h
@@ -36,6 +37,7 @@ quet_led/quet_led.obj: ../quet_led/../snake/../include.h
 quet_led/quet_led.obj: ../quet_led/../snake/private_snake.h
 quet_led/quet_led.obj: ../quet_led/../snake/snake.h
 quet_led/quet_led.obj: ../quet_led/../GPIO/GPIO.h
+quet_led/quet_led.obj: ../quet_led/../SYSTICK/SYSTICK.h
 
 ../quet_led/quet_led.c: 
 ../quet_led/quet_led.h: 
@@ -64,6 +66,7 @@ C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/qei.h:
 C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/fpu.h: 
 C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/uart.h: 
 C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/rom.h: 
+C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/systick.h: 
 C:/ti/TivaWare_C_Series-2.1.2.111/inc/hw_ints.h: 
 C:/ti/TivaWare_C_Series-2.1.2.111/inc/hw_gpio.h: 
 C:/ti/TivaWare_C_Series-2.1.2.111/inc/hw_memmap.h: 
@@ -73,3 +76,4 @@ C:/ti/TivaWare_C_Series-2.1.2.111/inc/hw_types.h:
 ../quet_led/../snake/private_snake.h: 
 ../quet_led/../snake/snake.h: 
 ../quet_led/../GPIO/GPIO.h: 
+../quet_led/../SYSTICK/SYSTICK.h: 
